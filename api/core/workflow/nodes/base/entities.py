@@ -11,6 +11,7 @@ class BaseNodeData(ABC, BaseModel):
     desc: Optional[str] = None
     error_strategy: Optional[ErrorStrategy] = None
     default_value: Optional[Any] = None
+    version: str = "1"
 
 
 class BaseIterationNodeData(BaseNodeData):
